@@ -1,7 +1,7 @@
 ......................................................................................................................................................................
 Installation of Kafka-UI for PLAINTEXT
 ......................................................................................................................................................................
-helm upgrade --install kafka-ui ./ -f ./values.yaml --set envs.config.KAFKA_CLUSTERS_0_NAME=kafka-with-kraft,envs.config.KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS=kafka-with-kraft.kafka.svc.cluster.local:9092 --namespace=kafka --create-namespace
+helm upgrade --install kafka-ui ./ -f ./values.yaml --set envs.config.KAFKA_CLUSTERS_0_NAME=kafka-with-kraft,envs.config.KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS=kafka-with-kraft.kafka.svc.cluster.local:9092 --namespace=kafka --create-namespace --kube-context=gke_wise-trainer-244916_us-central1_multicloud-gke-cluster
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
